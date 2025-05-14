@@ -21,7 +21,7 @@ A clean, modern, and responsive website for **Sweet Bliss Café**, showcasing a 
 - Aesthetic UI with custom fonts and visuals
 
 ## 🔗 Live Demo
-👉 [View Live Website](https://your-username.github.io/sweet-bliss-cafe)  
+👉 https://niftynontas.github.io/Cafe-Website-Final-Project/
 <!-- Replace the URL with your actual GitHub Pages link after publishing -->
 
 ## 🛠️ Getting Started
