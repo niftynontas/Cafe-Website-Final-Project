@@ -1,0 +1,328 @@
+/* Base Setup */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffafc;
+    color: #5e3a45;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffe8f0;
+    text-align: center;
+    padding: 20px;
+  }
+  .navbar {
+    background-color: #ffe8f0;
+    padding: 15px;
+    text-align: center;
+    position: static; 
+    top: 0;
+    width: 100%;
+  }
+  
+  
+  .logo h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8em;
+    color: #ff99aa;
+    margin: 10px 0 5px;
+  }
+  .logo-image img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+    transition: 0.3s ease;
+    margin-top: 40px;
+  }
+  .logo-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(255, 105, 180, 0.4);
+    border: 2px solid #ffc0cb;
+  }
+
+  .slogan {
+    font-style: italic;
+    color: #c96a87;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    background-color: #fff3d6;
+    color: #d86b82;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to bottom right, #ffeaf2, #fff3d6);
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    color: #ff99aa;
+    margin-bottom: 15px;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+  }
+  
+  .btn {
+    background-color: #ffc0cb;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #ff9eb0;
+  }
+
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .zoom-image {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: all 0.8s ease;
+    box-shadow: 0 0 0 rgba(255, 182, 193, 0);
+    will-change: opacity, transform;
+  }
+  
+  /* One-by-one zoom + fade in */
+  .zoom-image.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Pink glow on hover */
+  .zoom-image:hover {
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  
+  
+  
+  /* About Snippet */
+  .about-snippet {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff9fb;
+  }
+  
+  .about-snippet h3 {
+    font-size: 2em;
+    color: #f7b267;
+    margin-bottom: 10px;
+  }
+
+  /* Menu Container Styles */
+.menu-container {
+    padding: 30px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Category Titles */
+  .category h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ff1493;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Gallery Styles */
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  figure {
+    margin: 0;
+    position: relative;
+  }
+  
+  img.zoom-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-size: 1.1em;
+    color: #ff1493;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Hover Effect for Zoom */
+  img.zoom-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Adding a shadow effect to images */
+  img.zoom-image {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add a hover effect on the captions */
+  figcaption:hover {
+    color: #ff69b4;
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .contact form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact form button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffccf2;
+  }
+  
+  .contact form button:hover {
+    background-color: #ff4f41;
+  }
+  
+  .thank-you-message {
+    font-size: 1.2em;
+    color: #ff6f61;
+    margin-top: 20px;
+  }
+  .menu-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .menu-section h2 {
+    font-size: 2em;
+    color: #ff6f61;
+  }
+  
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .image-gallery figure {
+    text-align: center;
+  }
+  
+  .zoom-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.1);
+  }
+  
+  figcaption {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .price {
+    font-size: 1.2em;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .description {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+  }
+  .menu-category {
+    background-color: #ffe6f0; /* Light pastel pink */
+    padding: 20px;
+    border-radius: 12px; /* Optional: adds rounded corners */
+    margin-bottom: 30px; /* Optional: spacing between sections */
+  }
+  .center-item {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer {
+    background-color: #ffd9e8;
+    text-align: center;
+    padding: 10px 0px;
+    position: sticky; /* default */
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  

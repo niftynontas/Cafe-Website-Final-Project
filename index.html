@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Bliss Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="LOGO .png" alt="Sweet Bliss Café Logo" width="100" height="100">
+      <h1>Sweet Bliss Café</h1>
+      <p class="slogan">"Where every bite is a hug"</p>
+    </div>
+    <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Sweet Bliss Café</h2>
+    <p>Where love is baked into every treat 💕</p>
+    <a href="menu.html" class="btn">Explore Our Menu</a>
+    <a href="contact.html" class="btn">Contact Us</a>
+  
+    <div class="logo-image">
+      <img src="Cafe Image .png" alt="Cafe Illustration">
+    </div>
+  </section>
+  <h2 class="gallery-heading">✨🍬💗 Our Sweet Treats 💗✨🍬</h2>
+  <div class="image-gallery">
+    <figure>
+    <img src="Chocolate Fudge Cake.png" class="zoom-image" alt="Choc-Fudge cake">
+    <figcaption>🍫Chocolate Fudge Cake</figcaption>
+    </figure>
+    <figure>
+    <img src="Blueberry Cheesecake.png" class="zoom-image" alt="Cheesecake">
+    <figcaption>🫐 Blueberry Cheesecake</figcaption>
+  </figure>
+  <figure>
+    <img src="Matcha Roll Cake with light and airy sponge and a hint of green tea.png" class="zoom-image" alt="Matcha Roll Cake">
+    <figcaption>🍵 Matcha Roll Cake</figcaption>
+  </figure>
+  <figure>
+    <img src="Pistachio Éclair.png" class="zoom-image" alt="Pistachio Eclair">
+    <figcaption>🌿 Pistachio Éclair</figcaption>
+  </figure>
+  <figure>
+    <img src="Salted Caramel Truff.png" class="zoom-image" alt="Caramel Truff">
+    <figcaption>🍮 Salted Caramel Truffle</figcaption>
+  </figure>
+  <figure>
+    <img src="Raspberry Meringue.png" class="zoom-image" alt="Raspberry Meringue">
+    <figcaption>🍓 Raspberry Meringue</figcaption>
+  </figure>
+  <figure>
+    <img src="Mini donuts.png" class="zoom-image" alt="Mini donuts">
+    <figcaption>🍩 Mini Donuts</figcaption>
+  </figure>
+  <figure>
+    <img src="Pastries cute bows.png" class="zoom-image" alt="Bow pastries">
+    <figcaption>🎀 Bow Pastries</figcaption>
+  </figure>
+  <figure>
+    <img src="Cake pops.png" class="zoom-image" alt="Cake pops">
+    <figcaption>🍭 Cake Pops</figcaption>
+  </figure>
+  <figure>
+    <img src="Chai Latte.png" class="zoom-image" alt="Chai Latte">
+    <figcaption>☕ Chai Latte</figcaption>
+  </figure>
+  <figure>
+    <img src="Hazelnut Mocha .png" class="zoom-image" alt="Hazelnut Mocha">
+    <figcaption>🌰 Hazelnut Mocha</figcaption>
+  </figure>
+  <figure>
+    <img src="Peach Iced Tea .png" class="zoom-image" alt="Peach Iced Tea">
+    <figcaption>🍑 Peach Iced Tea</figcaption>
+  </figure>
+  <figure>
+    <img src="Caramel Affogato.png" class="zoom-image" alt="Caramel Affogato">
+    <figcaption>🍯 Caramel Affogato</figcaption>
+  </figure>
+  <figure>
+    <img src="Lavender Lemonade.png" class="zoom-image" alt="Lavender Lemonade">
+    <figcaption>💜 Lavender Lemonade</figcaption>
+  </figure>
+</div>
+
+
+<script>
+    let revealedCount = 0;
+    const images = document.querySelectorAll('.zoom-image');
+  
+    function revealOneByOne() {
+      let delay = 0;
+  
+      images.forEach((img, i) => {
+        const rect = img.getBoundingClientRect();
+        
+        // Check if image is within the viewport
+        if (rect.top < window.innerHeight - 100 && !img.classList.contains('visible')) {
+          setTimeout(() => {
+            img.classList.add('visible');
+          }, delay);
+  
+          delay += 250; // Delay between each image reveal
+          revealedCount = i + 1; // Update the revealed count
+        } else {
+          return; // Stop looping once one image isn't ready yet
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', revealOneByOne);
+    window.addEventListener('load', revealOneByOne);
+  </script>
+  
+  
+  <footer class="footer">
+    <p>&copy; 2025 Sweet Bliss Café | Made with 💗by Nontando Myoli</p>
+  </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sweet Bliss Café</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="LOGO .png" alt="Sweet Bliss Café Logo" width="100" height="100">
+      <h1>Sweet Bliss Café</h1>
+      <p class="slogan">"Where every bite is a hug"</p>
+    </div>
+    <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or you want to place an order; drop us a message! We love hearing from you. 💕</p>
+    
+        <!-- Contact Form -->
+        <form id="contactForm" action="#" method="POST" onsubmit="return handleSubmit(event)">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Your Name" />
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Your Email" />
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+    
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <div id="thankYouMessage" class="thank-you-message" style="display: none;">
+            <p>Thanks, sweetie! 💕 We'll get back to you soon.</p>
+          </div>
+        </section>
+    </nav>
+  </header>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sweet Bliss Café | Made with 💗by Nontando Myoli</p>
+  </footer>
+</body>
+</html>
+
+ 
