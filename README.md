@@ -1,4 +1,5 @@
-👩‍💻 Author
+👩‍💻 Author:
+
 Nontando Myoli
 Frontend enthusiast creating sweet digital experiences.
 
